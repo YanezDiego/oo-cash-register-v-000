@@ -1,7 +1,7 @@
 require 'pry'
 class CashRegister
 
-attr_accessor :total, :discount, :items, :last_transaction_total
+attr_accessor :total, :discount, :items, #:last_total
 
 
 
@@ -21,9 +21,10 @@ attr_accessor :total, :discount, :items, :last_transaction_total
     end
 
     def add_item(title, price, quantity = 1)
-      self.total += price * quantity
+      self.total += price * quantity#<= probably copy this piece of block and change it to a subtraction
       quantity.times do
       items << title
+      #need to connect this method to my #last_transaction
       end
     end
 
@@ -40,10 +41,10 @@ attr_accessor :total, :discount, :items, :last_transaction_total
 
     def last_transaction
       # trying to keep track of the last transaction
-
+      #self.total -= price * quantity ***
       # need to keep track of a "finished transaction"
 
-      #
+      # when dealing with a transaction is located in "#add_item"
 
     end
 
