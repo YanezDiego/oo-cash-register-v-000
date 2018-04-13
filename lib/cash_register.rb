@@ -41,11 +41,10 @@ attr_accessor :total, :discount, :items, #:last_total
 
     def last_transaction
       # trying to keep track of the last transaction
-      #self.total -= price * quantity ***
+      @last_transaction = self.total -= price * quantity ***
       # need to keep track of a "finished transaction"
 
       # when dealing with a transaction is located in "#add_item"
-
     end
 
     def void_last_transaction
