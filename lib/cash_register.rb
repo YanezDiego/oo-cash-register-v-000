@@ -42,10 +42,7 @@ attr_accessor :total, :discount, :items, :last_total
     #end
 
     def void_last_transaction
-      #binding.pry
-      new_total = @total - @total
-
-      new_total
+      binding.pry
     end
 
 end
