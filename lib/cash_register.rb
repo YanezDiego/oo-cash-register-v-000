@@ -37,7 +37,8 @@ attr_accessor :total, :discount, :items, :last_total
       end
     end
 
-    binding.pry
+    binding.pryexit
+
 
 end
 
