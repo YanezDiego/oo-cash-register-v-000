@@ -21,6 +21,7 @@ attr_accessor :total, :discount, :items, :last_total
     end
 
     def add_item(title, price, quantity = 1)
+      self.last_total = price*quantity
       self.total += price * quantity#<= probably copy this piece of block and change it to a subtraction
       quantity.times do
       items << title
