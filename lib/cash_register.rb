@@ -44,9 +44,9 @@ binding.pry
       @last_total = self.total -= price * quantity
     end
 
-    def void_last_transaction
+  #  def void_last_transaction
       #@last_total
-    end
+  #  end
 
 end
   # trying to keep track of the last transaction
