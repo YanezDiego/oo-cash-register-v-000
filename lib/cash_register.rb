@@ -37,8 +37,9 @@ attr_accessor :total, :discount, :items, :last_total
       end
     end
 
-    binding.pryexit
-
+    def void_last_transaction
+      binding.pry
+    end
 
 end
 
