@@ -38,7 +38,7 @@ attr_accessor :total, :discount, :items, :last_total
     end
 
     def last_transaction(title, price)
-
+      binding.pry
       @last_total = self.total -= price * quantity
     end
 
