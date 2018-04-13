@@ -51,3 +51,4 @@ end
   # trying to keep track of the last transaction
   # need to keep track of a "finished transaction"
   # when dealing with a transaction is located in "#add_item"
+#@last_total = self.total -= price * quantity
