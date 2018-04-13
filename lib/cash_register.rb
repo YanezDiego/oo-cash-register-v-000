@@ -40,10 +40,11 @@ attr_accessor :total, :discount, :items, :last_total
     def
 
     def last_transaction
+      binding.pry
       # trying to keep track of the last transaction
       @last_total = self.total -= price * quantity
       # need to keep track of a "finished transaction"
-      binding.pry
+
       # when dealing with a transaction is located in "#add_item"
     end
 
